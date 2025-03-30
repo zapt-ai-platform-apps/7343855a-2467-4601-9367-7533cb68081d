@@ -1,9 +1,11 @@
 import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import AppRoutes from './app/routes';
 
-export default function App(){
-    return (
-        <div className="min-h-screen">
-            App Template
-        </div>
-    )
+export default function App() {
+  return (
+    <Router>
+      <AppRoutes />
+    </Router>
+  );
 }

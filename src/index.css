@@ -1,3 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lexend:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html, body {
+  @apply h-full;
+}
+
+#root {
+  @apply h-full;
+}
+
+@layer base {
+  body {
+    @apply text-gray-800 bg-gray-50;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center cursor-pointer transition-colors duration-200;
+  }
+}
